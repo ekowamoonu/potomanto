@@ -1,0 +1,463 @@
+html,body{
+	background-color:#e7edee;/*#ebebeb*/
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/Rale.ttf);
+}
+
+/*complettion status alert*/
+.completion-state-container{
+	padding:0;
+	margin-top:5px;
+}
+
+.completion-state-container .alert{
+	border-radius: 0;
+	font-weight: bold;
+	font-size:13px;
+}
+
+/*bread crumb*/
+.search-category-display{
+	background-color:#2574A9;
+	color:white;
+}
+
+.search-category-display-container{
+	margin-top:4%;
+}
+/*navigation*/
+
+.logo{margin-top:35px;}
+
+.nav-div{
+	margin-top:32px;
+}
+
+.nav-row{
+	background-color:#2574A9;
+}
+
+.navbar-toggle{border:1px solid white;}
+.navbar-toggle .icon-bar{background-color:white;}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.cl-effect-18 {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-effect-18 a {
+	padding: 0 5px;
+	color: white;
+	font-weight: 700;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-18 a::before,
+.cl-effect-18 a::after {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	height: 2px;
+	margin-top: -1px;
+	background: transparent;
+	content: '';
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-18 a::before {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+.cl-effect-18 a::after {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	transform: translateY(20px);
+}
+
+.cl-effect-18 a:hover,
+.cl-effect-18 a:focus {
+	color: #336E7B;
+}
+
+.cl-effect-18 a:hover::before,
+.cl-effect-18 a:hover::after,
+.cl-effect-18 a:focus::before,
+.cl-effect-18 a:focus::after {
+	opacity: 0.7;
+	background: white;
+}
+
+.cl-effect-18 a:hover::before,
+.cl-effect-18 a:focus::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.cl-effect-18 a:hover::after,
+.cl-effect-18 a:focus::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+/*search field*/
+
+.icon{
+  color: white;
+  cursor:pointer;
+}
+
+
+.search-div{
+	margin-top:47px;
+}
+
+/**/
+.poto-person-container{
+	background-color:white;
+}
+/*styles for suitcase*/
+.suitcase{
+	margin-top: 10%;
+	font-size: 3.5em;
+	color:#2574A9;
+}
+
+/*styles for more details*/
+.more-container{
+	background-color:white;
+	/*color:white;*/
+	padding-bottom:2%;
+	margin-top:2%;
+	box-shadow: 1px 0px 2px grey;
+}
+.more-details{
+	/*border:1px solid white;*/
+	margin-top:30px;
+	font-family: Calibri,sans-serif;
+	font-size:1.5em;
+	
+}
+
+.more-details h2{
+	color:#2574A9;
+}
+
+
+.more-details h4{
+	overflow:hidden;
+	max-width:100%;
+	font-size:1em;
+
+}
+
+hr{margin-top:0;}
+
+
+/*.more-details h4 b{
+	color:;
+}*/
+
+.more-details h4 span,.more-details blockquote{font-weight:bold;color:grey;}
+.more-details blockquote{
+	white-space: pre-line;
+	background-color: #eee;
+}
+
+.more-details .fa{color:#2574A9;}
+
+.more-details h4 span:hover,.more-details blockquote:hover{color:green;}
+
+
+.skills-container{
+	font-family: Calibri,sans-serif;
+}
+
+.skills-container h4{
+	font-size:1.5em;
+}
+.skills-container .btn{
+	padding:2%;
+	margin-bottom: 1%;
+	font-size: 1.5em;
+	font-weight:bold;
+
+}
+
+
+/*actual image gallery*/
+.top{
+height:440px;/*290*/
+margin-top:50px;
+background-color:#eee;
+padding:0.5%;
+border:2px solid white;/*#ebebeb*/
+}
+
+.im{max-width:100%;height:100%;}
+
+
+/*styles for name of photo owner*/
+.top h3{
+background:rgba(0,0,0,0.5);
+position:absolute;
+z-index:22;
+color:white;
+padding:2px;
+max-width:95%;
+overflow:hidden;
+
+}
+
+
+/*style to ensure top margins between rows of photos*/
+.top-row{
+margin-top:3%;
+}
+
+/*others from the same institution or department or something*/
+
+/*actual image gallery*/
+.bottom{
+height:300px;/*290*/
+margin-top:50px;
+background-color:#eee;
+padding:0.5%;
+border:2px solid white;/*#ebebeb*/
+}
+
+
+.bottom-container{
+	margin-top: 5%;
+}
+
+.imb{max-width:100%;height:100%;}
+
+.imb{
+-webkit-filter:grayscale(100%);
+-moz-filter:grayscale(100%);
+-ms-filter:grayscale(100%);
+-os-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+
+.imb:hover{
+-webkit-filter:grayscale(0%);
+-moz-filter:grayscale(0%);
+-ms-filter:grayscale(0%);
+filter:grayscale(0%);
+-webkit-transform:scale(0.9);
+-moz-transform:scale(0.9);
+-ms-transform:scale(0.9);
+-o-transform:scale(0.9);
+-webkit-transition:all 0.3s ease-in;
+-moz-transition:all 0.3s ease-in;
+-ms-transition:all 0.3s ease-in;
+-o-transition:all 0.3s ease-in;
+transform:scale(0.9);
+transition:all 0.3s ease-in;
+}
+
+
+/*styles for name of photo owner*/
+.bottom h3{
+background:rgba(0,0,0,0.5);
+position:absolute;
+z-index:22;
+color:white;
+padding:2px;
+max-width:95%;
+overflow:hidden;
+
+}
+
+.bottom h3:hover{
+	background-color:#2574A9;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+
+}
+
+/*style to ensure top margins between rows of photos*/
+.bottom-row{
+margin-top:3%;
+}
+
+#bh3{
+	padding:3%;
+	background-color:#34495E;
+	color:white;
+}
+/*search filter styles*/
+.actual-form input,.actual-form select{
+	padding:3%;
+	margin-bottom:2%;
+	border-radius:0;
+	font-family: Raleway,Calibri,sans-serif;
+
+}
+
+.actual-form input{
+	min-width:100%;
+	max-width:100%;
+}
+
+.actual-form input[type="text"]:hover,.actual-form select:hover{
+	border:1px solid grey;
+}
+
+.actual-form input[type="text"],.actual-form select{
+	font-size:18px;
+	background:none;
+	color:black;
+	border:1px solid #eee;
+	box-shadow: none;
+}
+
+.actual-form input[type="submit"]{
+	padding:3%;
+	font-family: Raleway,Calibri,sans-serif;
+	font-size:20px;
+}
+
+.form-control{
+	height:2%;
+}
+
+.modal-content{
+	border-radius: 0;
+}
+/*.authentication-head{
+	color:white;
+	font-family:Raleway,Calibri,sans-serif;
+	background-color:rgb(3, 36, 46);
+	
+}*/
+
+/*form styles*/
+
+/*.form-head{
+	background-color:#F7CF1A;
+	margin-bottom:0;
+	padding:4%;
+	color:white;
+	text-align: center;
+
+}
+
+.form-main-div{*//*main container*/
+/*	margin:0px auto;
+	font-family:Raleway,Calibri,sans-serif;
+}
+
+.form-div{
+	min-width:65%;
+}
+
+.actual-form{
+	background-color:white;
+	padding:3%;
+}
+
+.actual-form input,.actual-form select{
+	padding:3%;
+	margin-bottom:2%;
+	border-radius:0;
+
+}
+
+.actual-form input[type="submit"]{font-size:18px;}
+
+
+.actual-form .form-control{
+	height:2%;
+}
+
+
+.alert-container{
+	margin-top:1px;
+	margin:1% auto;
+	margin-bottom:0;
+}
+
+.input-group{
+	margin-bottom:2%;
+	min-width: 100%;
+}
+
+.input-group label{
+	color:red;
+	font-family:Calibri,sans-serif;
+
+}
+
+.actual-form input[type="file"]{
+	border:1px solid #eee;
+	box-shadow: none;
+}*/
+
+/*styles for quick add*/
+.quick_add{
+	color:green;
+	font-size: 20px;
+	position:fixed;
+	bottom:0;
+	right:5px;
+	opacity:0.4;
+}
+
+.quick_add:hover{
+	opacity:1;
+	-webkit-transition:0.3s ease;
+	-moz-transition:0.3s ease;
+	-ms-transition:0.3s ease;
+	-o-transition:0.3s ease;
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	transition:0.3s ease;
+	transform:scale(1.2);
+}
+
+
+.copyright{
+	background-color:#114264;
+	color:white;
+	text-align: center;
+	margin-top: 2%;
+}

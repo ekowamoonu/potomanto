@@ -1,0 +1,80 @@
+body{
+	/*background-color:rgb(2, 60, 78);*/
+	background-image:url(../images/signup.jpg);
+	background-size: cover;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/Rale.ttf);
+}
+
+.authentication-head{
+	color:white;
+	font-family:Raleway,Calibri,sans-serif;
+    /*background-color:rgba(3, 36, 46);*/
+	background-color:rgba(0, 0, 0,0.5);
+	
+}
+
+/*form styles*/
+
+.form-head{
+	background-color:#F7CF1A;
+	margin-bottom:0;
+	padding:4%;
+	color:white;
+	text-align: center;
+
+}
+
+.form-main-div{/*main container*/
+	margin:0px auto;
+	font-family:Raleway,Calibri,sans-serif;
+}
+
+.form-div{
+	min-width:65%;
+}
+
+.actual-form{
+	background-color:rgba(255,255,255,0.9);
+	padding:3%;
+}
+
+.actual-form input,.actual-form select{
+	padding:3%;
+	margin-bottom:2%;
+	border-radius:0;
+
+}
+
+.actual-form input[type="submit"]{font-size:18px;}
+
+
+.actual-form .form-control{
+	height:2%;
+}
+
+
+.alert-container{
+	margin-top:1px;
+	margin:1% auto;
+	margin-bottom:0;
+}
+
+.input-group{
+	margin-bottom:2%;
+	min-width: 100%;
+}
+
+.input-group label{
+	color:red;
+	font-family:Calibri,sans-serif;
+
+}
+
+.actual-form input[type="file"]{
+	border:1px solid #eee;
+	box-shadow: none;
+}

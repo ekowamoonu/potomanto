@@ -1,0 +1,78 @@
+body{
+	/*background-color:rgb(2, 60, 78);*/
+	background-image:url(../images/signup.jpg);
+	background-size: cover;
+}
+
+
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/Rale.ttf);
+}
+
+.authentication-head{
+	color:white;
+	font-family:Raleway,Calibri,sans-serif;
+	background-color:rgb(3, 36, 46);
+	
+}
+
+/*form styles*/
+
+.form-head{
+	background-color:#F7CF1A;
+	margin-bottom:0;
+	padding:4%;
+	color:white;
+	text-align: center;
+
+}
+
+.form-main-div{/*main container*/
+	margin:4% auto;
+	font-family:Raleway,Calibri,sans-serif;
+}
+
+
+/*.form-div{
+	min-width:70%;
+}
+*/
+.actual-form{
+	background-color:rgba(255,255,255,0.9);
+	padding:10%;
+}
+
+.input-group{
+	margin-top:5%;
+	margin-bottom: 5%;
+}
+
+.actual-form input{
+	padding:4%;
+	margin-bottom:2%;
+	border-radius:0;
+
+}
+
+.actual-form input[type="text"]:hover,.actual-form input[type="password"]:hover{
+	border:1px solid grey;
+}
+
+.actual-form input[type="text"],.actual-form input[type="password"]{
+	font-size:18px;
+	background:none;
+	color:black;
+	/*height:70px;*/
+	border:1px solid transparent;
+	box-shadow: none;
+}
+
+.actual-form input[type="submit"]{font-size:18px;/*height:70px;*/}
+
+
+.actual-form .normal-btn{font-size:18px;/*height:70px;*/}
+
+.actual-form .form-control{
+	height:2%;
+}

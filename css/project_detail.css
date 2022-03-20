@@ -1,0 +1,385 @@
+html,body{
+	background-color:#e7edee;/*#ebebeb*/
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/Rale.ttf);
+}
+
+/*bread crumb*/
+.search-category-display{
+	background-color:#2574A9;
+	color:white;
+}
+
+.search-category-display-container{
+	margin-top:4%;
+}
+/*navigation*/
+
+.logo{margin-top:35px;}
+
+.nav-div{
+	margin-top:32px;
+}
+
+.nav-row{
+	background-color:#2574A9;
+}
+
+.navbar-toggle{border:1px solid white;}
+.navbar-toggle .icon-bar{background-color:white;}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.cl-effect-18 {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-effect-18 a {
+	padding: 0 5px;
+	color: white;
+	font-weight: 700;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-18 a::before,
+.cl-effect-18 a::after {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	height: 2px;
+	margin-top: -1px;
+	background: transparent;
+	content: '';
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-18 a::before {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+.cl-effect-18 a::after {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	transform: translateY(20px);
+}
+
+.cl-effect-18 a:hover,
+.cl-effect-18 a:focus {
+	color: #336E7B;
+}
+
+.cl-effect-18 a:hover::before,
+.cl-effect-18 a:hover::after,
+.cl-effect-18 a:focus::before,
+.cl-effect-18 a:focus::after {
+	opacity: 0.7;
+	background: white;
+}
+
+.cl-effect-18 a:hover::before,
+.cl-effect-18 a:focus::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.cl-effect-18 a:hover::after,
+.cl-effect-18 a:focus::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+/*search field*/
+
+.icon{
+  color: white;
+  cursor:pointer;
+}
+
+
+.search-div{
+	margin-top:47px;
+}
+
+/*project head*/
+.project-head{margin-top:5%;}
+
+.project-head h1{
+	color:#2574A9;
+}
+
+/*project extra*/
+.project-extra{
+	margin-top:5%;
+	box-shadow: 1px 0px 2px grey;
+	background-color:white;
+	padding:2%;
+}
+
+
+.project-extra h3{
+	color:grey;
+}
+
+
+.project-extra blockquote{
+	font-family: Calibri,sans-serif;
+	font-weight: lighter;
+	font-size:1.5em;
+	word-wrap:pre-line;
+
+}
+
+/*other projects from the same institution or department or something*/
+
+/*actual image gallery*/
+.bottom{
+height:300px;/*290*/
+margin-top:50px;
+background-color:#eee;
+padding:0.5%;
+border:2px solid white;/*#ebebeb*/
+}
+
+
+.bottom-container{
+	margin-top: 5%;
+}
+
+
+/*style to ensure top margins between rows of photos*/
+.bottom-row{
+margin-top:3%;
+}
+
+#bh3{
+	padding:3%;
+	background-color:#34495E;
+	color:white;
+}
+
+/*other project styles*/
+/*styles for nested row and col*/
+/*style to ensure top margins between rows of photos*/
+.top-row{
+margin-top:3%;
+}
+
+.nested-row{
+	margin-bottom:4%;
+	background-color:white;
+	padding:1%;
+	box-shadow: 0px 1px 2px grey;
+}
+
+
+.nested-row a{
+	color:black;
+}
+
+.nested-row a:hover .nested-col h3{
+  text-decoration: underline;
+}
+
+
+.nested-col p{
+  font-family:Raleway,Calibri,sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.nested-col h4{
+	color:grey;
+}
+
+/*check to remove margin top from screen sizes above 600px*/
+@media (max-width:600px){
+	.nested-col h3{margin-top:4%;}
+}
+
+@media(min-width: 604px){
+	.nested-col h3{margin-top:0;}
+}
+
+.nested-col h3{
+	color:#2574A9;
+}
+/*search filter styles*/
+.actual-form input,.actual-form select{
+	padding:3%;
+	margin-bottom:2%;
+	border-radius:0;
+	font-family: Raleway,Calibri,sans-serif;
+
+}
+
+.actual-form input{
+	min-width:100%;
+	max-width:100%;
+}
+
+.actual-form input[type="text"]:hover,.actual-form select:hover{
+	border:1px solid grey;
+}
+
+.actual-form input[type="text"],.actual-form select{
+	font-size:18px;
+	background:none;
+	color:black;
+	border:1px solid #eee;
+	box-shadow: none;
+}
+
+.actual-form input[type="submit"]{
+	padding:3%;
+	font-family: Raleway,Calibri,sans-serif;
+	font-size:20px;
+}
+
+.form-control{
+	height:2%;
+}
+
+.modal-content{
+	border-radius: 0;
+}
+
+
+.project-extra blockquote .btn{
+	color:white;
+   	border:none;
+   	padding:15px;
+   	font-size:16px;
+   	font-weight: bold;
+    border-radius:0;
+}
+/*.authentication-head{
+	color:white;
+	font-family:Raleway,Calibri,sans-serif;
+	background-color:rgb(3, 36, 46);
+	
+}*/
+
+/*form styles*/
+
+/*.form-head{
+	background-color:#F7CF1A;
+	margin-bottom:0;
+	padding:4%;
+	color:white;
+	text-align: center;
+
+}
+
+.form-main-div{*//*main container*/
+/*	margin:0px auto;
+	font-family:Raleway,Calibri,sans-serif;
+}
+
+.form-div{
+	min-width:65%;
+}
+
+.actual-form{
+	background-color:white;
+	padding:3%;
+}
+
+.actual-form input,.actual-form select{
+	padding:3%;
+	margin-bottom:2%;
+	border-radius:0;
+
+}
+
+.actual-form input[type="submit"]{font-size:18px;}
+
+
+.actual-form .form-control{
+	height:2%;
+}
+
+
+.alert-container{
+	margin-top:1px;
+	margin:1% auto;
+	margin-bottom:0;
+}
+
+.input-group{
+	margin-bottom:2%;
+	min-width: 100%;
+}
+
+.input-group label{
+	color:red;
+	font-family:Calibri,sans-serif;
+
+}
+
+.actual-form input[type="file"]{
+	border:1px solid #eee;
+	box-shadow: none;
+}*/
+
+/*styles for quick add*/
+.quick_add{
+	color:green;
+	font-size: 20px;
+	position:fixed;
+	bottom:0;
+	right:5px;
+	opacity:0.4;
+}
+
+.quick_add:hover{
+	opacity:1;
+	-webkit-transition:0.3s ease;
+	-moz-transition:0.3s ease;
+	-ms-transition:0.3s ease;
+	-o-transition:0.3s ease;
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	transition:0.3s ease;
+	transform:scale(1.2);
+}
+
+
+.copyright{
+	background-color:#114264;
+	color:white;
+	text-align: center;
+	margin-top: 2%;
+}
